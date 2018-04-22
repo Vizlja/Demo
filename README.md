@@ -8,21 +8,21 @@ Java version: 1.8
 Maven version: 3.3.9
 Spring Boot version: 2.0.1.RELEASE
 
-##Installation:
+## Installation:
 
 1. Clone or Download project.
 2. Build project using Maven: Execute "mvn install" in command line when inside Typeqast directory.
 3. Copy created "fat" jar from target directory (Typeqast/target/) named "electra-0.0.1-SNAPSHOT-exec.jar" to desired location where you want to run it.
 4. Run application by executing "java -jar electra-0.0.1-SNAPSHOT-exec.jar" in command line.
 
-##Usage:
+## Usage:
 
 To test application you need a Rest client (I use RESTClient Firefox extension).
 You must add header "Content-Type: application/json" for application to accept your RequestBody because exchange format is JSON.
 
-####Exposed endpoints are:
+#### Exposed endpoints are:
 -------
-######1. Insert ratios
+###### 1. Insert ratios
 
 http://<IP>:8080/ratios/insert (Method POST)
 
@@ -32,31 +32,31 @@ Body: [{"month":"JAN","profile":"A","ratio":0.09},{"month":"FEB","profile":"A","
 
 Note: Example body is for single profile in list, you can add ratios for additional profiles in the same list.
 -------
-######2. Get all ratios
+###### 2. Get all ratios
 
 http://<IP>:8080/ratios/getall (Method GET)
 
 Example: http://localhost:8080/ratios/getall
 -------
-######3. Get ratios by profile
+###### 3. Get ratios by profile
 
 http://<IP>:8080/ratios/getbyprofile/{profile} (Method GET) 
 
 Example: http://localhost:8080/ratios/getbyprofile/A
 -------
-######4. Delete ratios by profile
+###### 4. Delete ratios by profile
 
 http://<IP>:8080/ratios/deletebyprofile/{profile} (Method DELETE) 
 
 Example: http://localhost:8080/ratios/deletebyprofile/A
 -------
-######5. Delete all ratios
+###### 5. Delete all ratios
 
 http://<IP>:8080/ratios/deleteall (Method DELETE) 
 
 Example: http://localhost:8080/ratios/deleteall
 -------
-######6. Insert readings for year
+###### 6. Insert readings for year
 
 http://<IP>:8080/readings/insert/{year} (Method POST) 
 
@@ -66,31 +66,31 @@ Body: [{"connectionId":"0001","profile":"A","month":"JAN","reading":9},{"connect
 
 Note: Example body is for single connection in list, you can add readings for additional connections in the same list.
 -------
-######7. Get all readings
+###### 7. Get all readings
 
 http://<IP>:8080/readings/getall (Method GET) 
 
 Example: http://localhost:8080/readings/getall
 -------
-######8. Get readings by connection
+###### 8. Get readings by connection
 
 http://<IP>:8080/readings/getbyconn/{connectionId} (Method GET) 
 
 Example: http://localhost:8080/readings/getbyconn/0001
 -------
-######9. Get single reading for connection year and month
+###### 9. Get single reading for connection year and month
 
 http://<IP>:8080/readings/getone/{connectionId}/{year}/{month} (Method GET) 
 
 Example: http://localhost:8080/readings/getbyconn/0001/2018/JAN
 -------
-######10. Delete readings by connection
+###### 10. Delete readings by connection
 
 http://<IP>:8080/readings/deletebyconn/{connectionId} (Method DELETE) 
 
 Example: http://localhost:8080/readings/deletebyconn/0001
 -------
-######11. Delete all readings
+###### 11. Delete all readings
 
 http://<IP>:8080/readings/deleteall (Method DELETE) 
 
