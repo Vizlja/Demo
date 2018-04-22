@@ -5,15 +5,16 @@
 Spring Boot Rest application.
 
 Java version: 1.8
-Maven version: 3.3.9
+Maven version: 3.5.3
 Spring Boot version: 2.0.1.RELEASE
 
 ## Installation:
 
 1. Clone or Download project.
-2. Build project using Maven: Execute "mvn install" in command line when inside Typeqast directory.
-3. Copy created "fat" jar from target directory (Typeqast/target/) named "electra-0.0.1-SNAPSHOT-exec.jar" to desired location where you want to run it.
-4. Run application by executing "java -jar electra-0.0.1-SNAPSHOT-exec.jar" in command line.
+2. Build project using Maven: Execute "mvnw.cmd" file inside Typeqast directory.
+3. Option a: Run application directly from repo by executing "mvnw.cmd" with parameter "spring-boot:run" 
+4. Option b: Copy created "fat" jar from target directory (Typeqast/target/) named "electra-0.0.1-SNAPSHOT-exec.jar" to desired location where you want to run it.
+5. Option b: Run application by executing "java -jar electra-0.0.1-SNAPSHOT-exec.jar" in command line.
 
 ## Usage:
 
